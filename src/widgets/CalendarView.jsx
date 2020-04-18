@@ -12,13 +12,15 @@ const CalendarView = () => {
   );
 
   return (
-    <InfiniteCalendar
-      width={400}
-      height={600}
-      selected={today}
-      disabledDays={[0, 6]}
-      minDate={lastWeek}
-    />
+    <div style={{ marginLeft: '35%' }}>
+      <InfiniteCalendar
+        width={400}
+        height={600}
+        selected={today}
+        disabledDays={[0, 6]}
+        minDate={lastWeek}
+      />
+    </div>
   );
 };
 
